@@ -7,4 +7,5 @@ target 'ITMO-Donuts-iOS' do
 
   # Pods for ITMO-Donuts-iOS
   pod 'Alamofire'
+  pod 'SideMenu'
 end

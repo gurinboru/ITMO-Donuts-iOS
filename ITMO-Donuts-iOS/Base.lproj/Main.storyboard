@@ -164,6 +164,15 @@
                         <viewLayoutGuide key="safeArea" id="oG6-vH-Uhh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="Oqv-mZ-J3K">
+                        <barButtonItem key="leftBarButtonItem" image="line.3.horizontal" catalog="system" id="y7e-eG-u8f">
+                            <connections>
+                                <action selector="didTapMenuButton:" destination="sok-RL-iVt" id="oBB-vd-1rF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Nd-Wu-Lvn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -282,6 +291,7 @@
     <resources>
         <image name="Background" width="390" height="844"/>
         <image name="ITMO_DONUTS" width="614" height="70"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
