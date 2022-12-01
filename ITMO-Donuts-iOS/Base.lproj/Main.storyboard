@@ -145,9 +145,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="4Bz-vH-6bD"/>
                     <connections>
-                        <outlet property="firstPassArea" destination="rUh-Re-2pC" id="FfD-j9-qnz"/>
-                        <outlet property="loginArea" destination="sx2-TX-Q0b" id="ctV-xZ-zZ8"/>
-                        <outlet property="secondPassArea" destination="KhG-27-xYX" id="QUL-dH-Qic"/>
+                        <outlet property="firstPassTextArea" destination="rUh-Re-2pC" id="FfD-j9-qnz"/>
+                        <outlet property="loginTextArea" destination="sx2-TX-Q0b" id="ctV-xZ-zZ8"/>
+                        <outlet property="secondPassTextArea" destination="KhG-27-xYX" id="QUL-dH-Qic"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rb6-mI-fFM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -269,6 +269,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="fKQ-IL-63p"/>
+                    <connections>
+                        <outlet property="nameTextArea" destination="X0F-o4-LCg" id="ViV-bL-GIv"/>
+                        <outlet property="passwordTextArea" destination="814-SQ-VSE" id="6XY-Wt-Gvz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gL1-jP-qwg" sceneMemberID="firstResponder"/>
             </objects>
