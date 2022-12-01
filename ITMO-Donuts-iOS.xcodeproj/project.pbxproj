@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,15 +27,21 @@
 		323C8381292A2E2700C15D21 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 323C836D292A2E2700C15D21 /* Poppins-Thin.ttf */; };
 		323C8385292A38EA00C15D21 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C8384292A38EA00C15D21 /* SignUpViewController.swift */; };
 		323C8388292A394100C15D21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C8387292A394100C15D21 /* LoginViewController.swift */; };
+		D12DAF7F292E438700D555BF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAF7E292E438700D555BF /* MenuViewController.swift */; };
+		D12DAF81292E43E600D555BF /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAF80292E43E600D555BF /* ContainerViewController.swift */; };
+		D12DAF83292E459100D555BF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAF82292E459100D555BF /* ProfileViewController.swift */; };
+		D12DAF85292E4F8E00D555BF /* TapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAF84292E4F8E00D555BF /* TapeViewController.swift */; };
 		D1B1A35C2911C9730034C053 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A35B2911C9730034C053 /* AppDelegate.swift */; };
 		D1B1A35E2911C9730034C053 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A35D2911C9730034C053 /* SceneDelegate.swift */; };
 		D1B1A3602911C9730034C053 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A35F2911C9730034C053 /* ViewController.swift */; };
 		D1B1A3632911C9730034C053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A3612911C9730034C053 /* Main.storyboard */; };
 		D1B1A3652911C9730034C053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A3642911C9730034C053 /* Assets.xcassets */; };
 		D1B1A3682911C9730034C053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A3662911C9730034C053 /* LaunchScreen.storyboard */; };
+		E45436A46EB8E32B6BD0BD98 /* Pods_ITMO_Donuts_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050A5165D77BB2764180CAE9 /* Pods_ITMO_Donuts_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		050A5165D77BB2764180CAE9 /* Pods_ITMO_Donuts_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ITMO_Donuts_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		323C835A292A2E2600C15D21 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		323C835B292A2E2600C15D21 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
 		323C835C292A2E2600C15D21 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -56,6 +62,11 @@
 		323C836D292A2E2700C15D21 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		323C8384292A38EA00C15D21 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		323C8387292A394100C15D21 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3FD5983396B8891FD09EDBE2 /* Pods-ITMO-Donuts-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITMO-Donuts-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ITMO-Donuts-iOS/Pods-ITMO-Donuts-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D12DAF7E292E438700D555BF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D12DAF80292E43E600D555BF /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		D12DAF82292E459100D555BF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D12DAF84292E4F8E00D555BF /* TapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeViewController.swift; sourceTree = "<group>"; };
 		D1B1A3582911C9730034C053 /* ITMO-Donuts-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITMO-Donuts-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B1A35B2911C9730034C053 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1B1A35D2911C9730034C053 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +75,7 @@
 		D1B1A3642911C9730034C053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1B1A3672911C9730034C053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1B1A3692911C9730034C053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D9283D80194754FE3066E7 /* Pods-ITMO-Donuts-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITMO-Donuts-iOS.release.xcconfig"; path = "Target Support Files/Pods-ITMO-Donuts-iOS/Pods-ITMO-Donuts-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45436A46EB8E32B6BD0BD98 /* Pods_ITMO_Donuts_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,8 +120,30 @@
 			children = (
 				323C8384292A38EA00C15D21 /* SignUpViewController.swift */,
 				323C8387292A394100C15D21 /* LoginViewController.swift */,
+				D12DAF7E292E438700D555BF /* MenuViewController.swift */,
+				D12DAF80292E43E600D555BF /* ContainerViewController.swift */,
+				D12DAF82292E459100D555BF /* ProfileViewController.swift */,
+				D12DAF84292E4F8E00D555BF /* TapeViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		78363EFE4F5EC0A28D0EF71D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FD5983396B8891FD09EDBE2 /* Pods-ITMO-Donuts-iOS.debug.xcconfig */,
+				F7D9283D80194754FE3066E7 /* Pods-ITMO-Donuts-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		913C1784873771E6DF81C515 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				050A5165D77BB2764180CAE9 /* Pods_ITMO_Donuts_iOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D1B1A34F2911C9720034C053 = {
@@ -117,6 +152,8 @@
 				323C8359292A2DE600C15D21 /* Fonts */,
 				D1B1A35A2911C9730034C053 /* ITMO-Donuts-iOS */,
 				D1B1A3592911C9730034C053 /* Products */,
+				78363EFE4F5EC0A28D0EF71D /* Pods */,
+				913C1784873771E6DF81C515 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1B1A36C2911C9730034C053 /* Build configuration list for PBXNativeTarget "ITMO-Donuts-iOS" */;
 			buildPhases = (
+				61E76815823177CF6B16F6AB /* [CP] Check Pods Manifest.lock */,
 				D1B1A3542911C9730034C053 /* Sources */,
 				D1B1A3552911C9730034C053 /* Frameworks */,
 				D1B1A3562911C9730034C053 /* Resources */,
+				A903286FDF0A8D0F23DCD84C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,7 +218,7 @@
 				};
 			};
 			buildConfigurationList = D1B1A3532911C9720034C053 /* Build configuration list for PBXProject "ITMO-Donuts-iOS" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -227,15 +266,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		61E76815823177CF6B16F6AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ITMO-Donuts-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A903286FDF0A8D0F23DCD84C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ITMO-Donuts-iOS/Pods-ITMO-Donuts-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ITMO-Donuts-iOS/Pods-ITMO-Donuts-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ITMO-Donuts-iOS/Pods-ITMO-Donuts-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D1B1A3542911C9730034C053 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D1B1A3602911C9730034C053 /* ViewController.swift in Sources */,
+				D12DAF7F292E438700D555BF /* MenuViewController.swift in Sources */,
+				D12DAF85292E4F8E00D555BF /* TapeViewController.swift in Sources */,
+				D12DAF81292E43E600D555BF /* ContainerViewController.swift in Sources */,
 				D1B1A35C2911C9730034C053 /* AppDelegate.swift in Sources */,
 				D1B1A35E2911C9730034C053 /* SceneDelegate.swift in Sources */,
 				323C8388292A394100C15D21 /* LoginViewController.swift in Sources */,
+				D12DAF83292E459100D555BF /* ProfileViewController.swift in Sources */,
 				323C8385292A38EA00C15D21 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +463,7 @@
 		};
 		D1B1A36D2911C9730034C053 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FD5983396B8891FD09EDBE2 /* Pods-ITMO-Donuts-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -405,6 +491,7 @@
 		};
 		D1B1A36E2911C9730034C053 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D9283D80194754FE3066E7 /* Pods-ITMO-Donuts-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -16,6 +16,11 @@ class LoginViewController: UIViewController {
     }
     
 
+    @IBAction func actionSignIn(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let menuViewController = storyboard.instantiateViewController(withIdentifier: "vc") as UIViewController
+        self.present(menuViewController, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
