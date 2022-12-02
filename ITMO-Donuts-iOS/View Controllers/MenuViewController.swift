@@ -6,72 +6,75 @@
 //
 
 import UIKit
+import SideMenu
 
-protocol MenuViewControllerDelegate: AnyObject {
-    func didSelect(menuItem: MenuViewController.MenuOptions)
-}
-
-class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    weak var delegate: MenuViewControllerDelegate?
+class MenuViewController: UIViewController, ContainerControllerDelegate {
     
-    enum MenuOptions: String, CaseIterable {
-        case tape = "Tape"
-        case profile = "Profile"
-        case aboutus = "About Us"
-        
-        var imageName: String {
-            switch self {
-            case .tape:
-                return "tape"
-            case .profile:
-                return "profile"
-            case .aboutus:
-                return "about us"
-            }
-        }
-    }
-    
-    private let tableView : UITableView = {
-        let table = UITableView()
-        table.backgroundColor = nil
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        return table
-    }()
-    
-    let greyColor = UIColor.gray
+    private var sideMenu: SideMenuNavigationController?
+    private let tapeController = TapeViewController()
+    private let profileController = ProfileViewController()
+    private let cartController = CartViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(tableView)
-        tableView.delegate = self
-        tableView.dataSource = self
-        // Do any additional setup after loading the view.
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        tableView.frame = CGRect(x: 0, y: view.safeAreaInsets.top, width: view.bounds.size.width, height: view.bounds.size.height)
-    }
+        let menu = ContainerController(with: SideMenuItem.allCases)
+        menu.delegate = self
+        
+        sideMenu = SideMenuNavigationController(rootViewController: menu)
+        sideMenu?.leftSide = true
 
-    // Table
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return MenuOptions.allCases.count
+        SideMenuManager.default.leftMenuNavigationController = sideMenu
+        SideMenuManager.default.addPanGestureToPresent(toView: view)
+        addChildControllers()
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = MenuOptions.allCases[indexPath.row].rawValue
-        cell.textLabel?.textColor = .white
-        cell.imageView?.image = UIImage(systemName: MenuOptions.allCases[indexPath.row].imageName)
-        cell.imageView?.tintColor = .white
-        cell.backgroundColor = greyColor
-        cell.contentView.backgroundColor = greyColor
-        return cell
+    private func addChildControllers() {
+        addChild(tapeController)
+        addChild(profileController)
+        addChild(cartController)
+        
+        view.addSubview(tapeController.view)
+        view.addSubview(profileController.view)
+        view.addSubview(cartController.view)
+        tapeController.view.frame = view.bounds
+        profileController.view.frame = view.bounds
+        cartController.view.frame = view.bounds
+        
+        tapeController.didMove(toParent: self)
+        profileController.didMove(toParent: self)
+        cartController.didMove(toParent: self)
+        
+        tapeController.view.isHidden = true
+        profileController.view.isHidden = true
+        cartController.view.isHidden = true
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        let item = MenuOptions.allCases[indexPath.row]
-        delegate?.didSelect(menuItem: item)
+    @IBAction func didTapMenuButton(_ sender: Any) {
+        present(sideMenu!, animated: true)
+    }
+    
+    func didSelectMenuItem(named: SideMenuItem) {
+        sideMenu?.dismiss(animated: true, completion: nil)
+        
+        title = named.rawValue
+        
+        switch named {
+        case .tape:
+            tapeController.view.isHidden = false
+            profileController.view.isHidden = true
+            cartController.view.isHidden = true
+        case .profile:
+            tapeController.view.isHidden = true
+            profileController.view.isHidden = false
+            cartController.view.isHidden = true
+        case .cart:
+            tapeController.view.isHidden = true
+            profileController.view.isHidden = true
+            cartController.view.isHidden = false
+        case .about:
+            tapeController.view.isHidden = true
+            profileController.view.isHidden = true
+            cartController.view.isHidden = true
+        }
     }
 }

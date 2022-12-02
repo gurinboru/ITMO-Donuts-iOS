@@ -7,103 +7,56 @@
 
 import UIKit
 
-class ContainerViewController: UIViewController {
-    enum MenuState {
-        case opened
-        case closed
-    }
-    private var menuState: MenuState = .closed
+protocol ContainerControllerDelegate {
+    func didSelectMenuItem(named: SideMenuItem)
+}
+
+enum SideMenuItem: String, CaseIterable {
+    case about = "About"
+    case tape = "Tape"
+    case profile = "Profile"
+    case cart = "Cart"
+}
+
+class ContainerController: UITableViewController {
+    public var delegate: ContainerControllerDelegate?
+    private let menuItems: [SideMenuItem]
+    private let colorBack = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 1)
     
-    var menuVC = MenuViewController()
-    let profileVC = ProfileViewController()
-    let tapeVC = TapeViewController()
-    var navVC: UINavigationController?
-//    lazy var profileVC = ProfileViewController()
+    init(with menuItems: [SideMenuItem]) {
+        self.menuItems = menuItems
+        super.init(nibName: nil, bundle: nil)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .red
-        addChildVCs()
-        // Do any additional setup after loading the view.
+        tableView.backgroundColor = colorBack
+        view.backgroundColor = colorBack
     }
     
-    private func addChildVCs() {
-        // Menu
-        menuVC.delegate = self
-        addChild(menuVC)
-        view.addSubview(menuVC.view)
-        menuVC.didMove(toParent: self)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // Table
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return menuItems.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = menuItems[indexPath.row].rawValue
+        cell.textLabel?.textColor = .white
+        cell.backgroundColor = colorBack
+        cell.contentView.backgroundColor = colorBack
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         
-        // Profile
-        addChild(profileVC)
-        view.addSubview(profileVC.view)
-        profileVC.didMove(toParent: self)
-        
-        //Tape
-        tapeVC.delegate = self
-        let navVC = UINavigationController(rootViewController: tapeVC)
-        addChild(navVC)
-        view.addSubview(navVC.view)
-        navVC.didMove(toParent: self)
-        self.navVC = navVC
-    }
-
-}
-
-extension ContainerViewController: TapeViewControllerDelegate {
-    func didTapMenuButton() {
-        // Animate the menu
-        toggleMenu(completion: nil)
-    }
-    
-    func toggleMenu(completion: (() -> Void)?) {
-        switch menuState {
-        case .closed:
-            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut) {
-                self.navVC?.view.frame.origin.x = self.tapeVC.view.frame.size.width - 80
-            } completion: { [weak self] done in
-                if done {
-                    self?.menuState = .opened
-                }
-            }
-        case .opened:
-            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut) {
-                self.navVC?.view.frame.origin.x = 0
-            } completion: { [weak self] done in
-                if done {
-                    self?.menuState = .closed
-                    DispatchQueue.main.async {
-                        completion?()
-                    }
-                }
-            }
-        }
-    }
-}
-
-extension ContainerViewController: MenuViewControllerDelegate {
-    func didSelect(menuItem: MenuViewController.MenuOptions) {
-        toggleMenu { [weak self] in
-            switch menuItem {
-            case .profile:
-                self?.addProfile()
-            case .tape:
-                self?.resetToTape()            case .aboutus:
-                break
-            }
-        }
-    }
-    
-    func addProfile() {
-        let vc = profileVC
-        tapeVC.addChild(vc)
-        tapeVC.view.addSubview(vc.view)
-        vc.view.frame = view.frame
-        vc.didMove(toParent: tapeVC)
-        tapeVC.title = vc.title
-    }
-    
-    func resetToTape() {
-        profileVC.view.removeFromSuperview()
-        profileVC.didMove(toParent: nil)
+        // Relay to delegate about menu item selection
+        let selectedItem = menuItems[indexPath.row]
+        delegate?.didSelectMenuItem(named: selectedItem)
     }
 }

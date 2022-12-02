@@ -164,6 +164,15 @@
                         <viewLayoutGuide key="safeArea" id="oG6-vH-Uhh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="Oqv-mZ-J3K">
+                        <barButtonItem key="leftBarButtonItem" image="line.3.horizontal" catalog="system" id="y7e-eG-u8f">
+                            <connections>
+                                <action selector="didTapMenuButton:" destination="sok-RL-iVt" id="oBB-vd-1rF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Nd-Wu-Lvn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,7 +191,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V4T-sO-8Qx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3623" y="6"/>
+            <point key="canvasLocation" x="3623" y="-2"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="DyY-ek-mXB">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="Z3V-08-KXE" customClass="ProfileViewController" customModule="ITMO_Donuts_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g0Q-eL-16K">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="q59-zy-iR3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A2v-EZ-rDA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4454" y="-2"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7HL-DK-aPO">
+            <objects>
+                <viewController id="I7v-xC-4DR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nMd-wQ-Xtc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="e4u-s8-SVp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m3K-bd-eDr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5297" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gXe-S3-2QP">
@@ -282,6 +321,7 @@
     <resources>
         <image name="Background" width="390" height="844"/>
         <image name="ITMO_DONUTS" width="614" height="70"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

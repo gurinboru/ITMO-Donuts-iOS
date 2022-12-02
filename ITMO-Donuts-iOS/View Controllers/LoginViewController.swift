@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
                 print(response)
                 print("Inside")
                 let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let tapeVC = storyboard.instantiateViewController(withIdentifier: "TapeViewController") as! TapeViewController
+                let tapeVC = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
                 //self.present(tapeVC, animated: true, completion: nil)
                 self.navigationController?.pushViewController(tapeVC, animated: true)
                 break
@@ -39,10 +39,6 @@ class LoginViewController: UIViewController {
                 print(Error.self)
             }
         }
-        
-//        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let menuViewController = storyboard.instantiateViewController(withIdentifier: "vc") as UIViewController
-//        self.present(menuViewController, animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
