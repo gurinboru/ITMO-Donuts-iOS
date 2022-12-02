@@ -12,8 +12,10 @@ protocol ContainerControllerDelegate {
 }
 
 enum SideMenuItem: String, CaseIterable {
+    case about = "About"
     case tape = "Tape"
     case profile = "Profile"
+    case cart = "Cart"
 }
 
 class ContainerController: UITableViewController {

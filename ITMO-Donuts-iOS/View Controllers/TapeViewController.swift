@@ -7,10 +7,6 @@
 
 import UIKit
 
-//protocol TapeViewControllerDelegate: AnyObject {
-//    func didTapMenuButton()
-//}
-
 class TapeViewController: UIViewController {
     //weak var delegate: TapeViewControllerDelegate?
     
@@ -18,10 +14,5 @@ class TapeViewController: UIViewController {
         super.viewDidLoad()
         title = "Tape"
         view.backgroundColor = .purple
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "list.dash"), style: .done, target: self, action: #selector(didTapMenuButton))
     }
-
-//    @objc func didTapMenuButton() {
-//        delegate?.didTapMenuButton()
-//    }
 }

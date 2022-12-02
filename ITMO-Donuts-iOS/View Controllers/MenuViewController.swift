@@ -13,6 +13,7 @@ class MenuViewController: UIViewController, ContainerControllerDelegate {
     private var sideMenu: SideMenuNavigationController?
     private let tapeController = TapeViewController()
     private let profileController = ProfileViewController()
+    private let cartController = CartViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,16 +31,22 @@ class MenuViewController: UIViewController, ContainerControllerDelegate {
     private func addChildControllers() {
         addChild(tapeController)
         addChild(profileController)
+        addChild(cartController)
+        
         view.addSubview(tapeController.view)
         view.addSubview(profileController.view)
+        view.addSubview(cartController.view)
         tapeController.view.frame = view.bounds
         profileController.view.frame = view.bounds
+        cartController.view.frame = view.bounds
         
         tapeController.didMove(toParent: self)
         profileController.didMove(toParent: self)
+        cartController.didMove(toParent: self)
         
         tapeController.view.isHidden = true
         profileController.view.isHidden = true
+        cartController.view.isHidden = true
     }
     
     @IBAction func didTapMenuButton(_ sender: Any) {
@@ -55,9 +62,19 @@ class MenuViewController: UIViewController, ContainerControllerDelegate {
         case .tape:
             tapeController.view.isHidden = false
             profileController.view.isHidden = true
+            cartController.view.isHidden = true
         case .profile:
             tapeController.view.isHidden = true
             profileController.view.isHidden = false
+            cartController.view.isHidden = true
+        case .cart:
+            tapeController.view.isHidden = true
+            profileController.view.isHidden = true
+            cartController.view.isHidden = false
+        case .about:
+            tapeController.view.isHidden = true
+            profileController.view.isHidden = true
+            cartController.view.isHidden = true
         }
     }
 }
