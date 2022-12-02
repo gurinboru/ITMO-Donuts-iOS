@@ -208,10 +208,10 @@
             </objects>
             <point key="canvasLocation" x="4454" y="-2"/>
         </scene>
-        <!--View Controller-->
+        <!--Cart View Controller-->
         <scene sceneID="7HL-DK-aPO">
             <objects>
-                <viewController id="I7v-xC-4DR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CartViewController" id="I7v-xC-4DR" customClass="CartViewController" customModule="ITMO_Donuts_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nMd-wQ-Xtc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

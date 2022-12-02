@@ -37,6 +37,8 @@
 		D1B1A3632911C9730034C053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A3612911C9730034C053 /* Main.storyboard */; };
 		D1B1A3652911C9730034C053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A3642911C9730034C053 /* Assets.xcassets */; };
 		D1B1A3682911C9730034C053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A3662911C9730034C053 /* LaunchScreen.storyboard */; };
+		D1D79E75293A2B9B00BDE1E7 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D79E74293A2B9B00BDE1E7 /* CartViewController.swift */; };
+		D1D79E77293A2C6600BDE1E7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D1D79E76293A2C6600BDE1E7 /* .gitignore */; };
 		E45436A46EB8E32B6BD0BD98 /* Pods_ITMO_Donuts_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050A5165D77BB2764180CAE9 /* Pods_ITMO_Donuts_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,8 @@
 		D1B1A3642911C9730034C053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1B1A3672911C9730034C053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1B1A3692911C9730034C053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D79E74293A2B9B00BDE1E7 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		D1D79E76293A2C6600BDE1E7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F7D9283D80194754FE3066E7 /* Pods-ITMO-Donuts-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITMO-Donuts-iOS.release.xcconfig"; path = "Target Support Files/Pods-ITMO-Donuts-iOS/Pods-ITMO-Donuts-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +128,7 @@
 				D12DAF80292E43E600D555BF /* ContainerViewController.swift */,
 				D12DAF82292E459100D555BF /* ProfileViewController.swift */,
 				D12DAF84292E4F8E00D555BF /* TapeViewController.swift */,
+				D1D79E74293A2B9B00BDE1E7 /* CartViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -134,7 +139,6 @@
 				3FD5983396B8891FD09EDBE2 /* Pods-ITMO-Donuts-iOS.debug.xcconfig */,
 				F7D9283D80194754FE3066E7 /* Pods-ITMO-Donuts-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -149,6 +153,7 @@
 		D1B1A34F2911C9720034C053 = {
 			isa = PBXGroup;
 			children = (
+				D1D79E76293A2C6600BDE1E7 /* .gitignore */,
 				323C8359292A2DE600C15D21 /* Fonts */,
 				D1B1A35A2911C9730034C053 /* ITMO-Donuts-iOS */,
 				D1B1A3592911C9730034C053 /* Products */,
@@ -244,6 +249,7 @@
 				323C8378292A2E2700C15D21 /* Poppins-Medium.ttf in Resources */,
 				323C8370292A2E2700C15D21 /* Poppins-ExtraLight.ttf in Resources */,
 				323C837F292A2E2700C15D21 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				D1D79E77293A2C6600BDE1E7 /* .gitignore in Resources */,
 				323C8379292A2E2700C15D21 /* Poppins-Italic.ttf in Resources */,
 				323C8374292A2E2700C15D21 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				323C8376292A2E2700C15D21 /* Poppins-BoldItalic.ttf in Resources */,
@@ -315,6 +321,7 @@
 			files = (
 				D1B1A3602911C9730034C053 /* ViewController.swift in Sources */,
 				D12DAF7F292E438700D555BF /* MenuViewController.swift in Sources */,
+				D1D79E75293A2B9B00BDE1E7 /* CartViewController.swift in Sources */,
 				D12DAF85292E4F8E00D555BF /* TapeViewController.swift in Sources */,
 				D12DAF81292E43E600D555BF /* ContainerViewController.swift in Sources */,
 				D1B1A35C2911C9730034C053 /* AppDelegate.swift in Sources */,
