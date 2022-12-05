@@ -8,18 +8,25 @@
 import UIKit
 import Alamofire
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var nameTextArea: UITextField!
     @IBOutlet weak var passwordTextArea: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.nameTextArea.delegate = self
+        self.passwordTextArea.delegate = self
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return nameTextArea.resignFirstResponder()
+    }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func actionSignIn(_ sender: Any) {
         let loginURL = URL(string: "https://itmo-donuts-auth.onrender.com/api/v1/auth/login")!
         let parameters: [String: Any] = ["name": nameTextArea.text, "password": passwordTextArea.text]
@@ -40,14 +47,4 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
