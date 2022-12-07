@@ -11,7 +11,8 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Profile"
+        title = UserData.username
+        print(UserData.username)
         view.backgroundColor = .blue
     }
 }
