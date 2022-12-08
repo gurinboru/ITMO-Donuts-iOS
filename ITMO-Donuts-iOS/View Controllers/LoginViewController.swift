@@ -30,20 +30,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func actionSignIn(_ sender: Any) {
         let loginURL = URL(string: "https://itmo-donuts-auth.onrender.com/api/v1/auth/login")!
         let parameters: [String: Any] = ["name": nameTextArea.text, "password": passwordTextArea.text]
-        
-        AF.request(loginURL, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON {
-            response in
-            switch (response.result) {
-            case .success:
-                print(response)
-                print("Inside")
-                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let tapeVC = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
-                //self.present(tapeVC, animated: true, completion: nil)
-                self.navigationController?.pushViewController(tapeVC, animated: true)
-                break
-            case .failure:
-                print(Error.self)
+        if (!nameTextArea.text!.isEmpty && !passwordTextArea.text!.isEmpty) {
+            AF.request(loginURL, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { [self]
+                response in
+                switch (response.result) {
+                case .success:
+                    UserData.username = nameTextArea.text!
+                    print(response)
+                    print("Inside")
+                    let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let tapeVC = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+                    //self.present(tapeVC, animated: true, completion: nil)
+                    self.navigationController?.pushViewController(tapeVC, animated: true)
+                    break
+                case .failure:
+                    print(Error.self)
+                }
             }
         }
     }

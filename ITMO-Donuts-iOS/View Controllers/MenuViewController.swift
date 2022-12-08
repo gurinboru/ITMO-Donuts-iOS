@@ -55,7 +55,6 @@ class MenuViewController: UIViewController, ContainerControllerDelegate {
     
     func didSelectMenuItem(named: SideMenuItem) {
         sideMenu?.dismiss(animated: true, completion: nil)
-        
         title = named.rawValue
         
         switch named {

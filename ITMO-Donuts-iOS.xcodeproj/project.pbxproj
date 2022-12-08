@@ -31,6 +31,7 @@
 		D12DAF81292E43E600D555BF /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAF80292E43E600D555BF /* ContainerViewController.swift */; };
 		D12DAF83292E459100D555BF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAF82292E459100D555BF /* ProfileViewController.swift */; };
 		D12DAF85292E4F8E00D555BF /* TapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAF84292E4F8E00D555BF /* TapeViewController.swift */; };
+		D16F7BA22940AD1B0036D981 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16F7BA12940AD1B0036D981 /* UserData.swift */; };
 		D1B1A35C2911C9730034C053 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A35B2911C9730034C053 /* AppDelegate.swift */; };
 		D1B1A35E2911C9730034C053 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A35D2911C9730034C053 /* SceneDelegate.swift */; };
 		D1B1A3602911C9730034C053 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A35F2911C9730034C053 /* ViewController.swift */; };
@@ -69,6 +70,7 @@
 		D12DAF80292E43E600D555BF /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		D12DAF82292E459100D555BF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D12DAF84292E4F8E00D555BF /* TapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeViewController.swift; sourceTree = "<group>"; };
+		D16F7BA12940AD1B0036D981 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		D1B1A3582911C9730034C053 /* ITMO-Donuts-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITMO-Donuts-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B1A35B2911C9730034C053 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1B1A35D2911C9730034C053 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D16F7BA02940AD090036D981 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D16F7BA12940AD1B0036D981 /* UserData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D1B1A34F2911C9720034C053 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +183,7 @@
 		D1B1A35A2911C9730034C053 /* ITMO-Donuts-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D16F7BA02940AD090036D981 /* Models */,
 				323C8386292A38FA00C15D21 /* View Controllers */,
 				D1B1A35B2911C9730034C053 /* AppDelegate.swift */,
 				D1B1A35D2911C9730034C053 /* SceneDelegate.swift */,
@@ -324,6 +335,7 @@
 				D1D79E75293A2B9B00BDE1E7 /* CartViewController.swift in Sources */,
 				D12DAF85292E4F8E00D555BF /* TapeViewController.swift in Sources */,
 				D12DAF81292E43E600D555BF /* ContainerViewController.swift in Sources */,
+				D16F7BA22940AD1B0036D981 /* UserData.swift in Sources */,
 				D1B1A35C2911C9730034C053 /* AppDelegate.swift in Sources */,
 				D1B1A35E2911C9730034C053 /* SceneDelegate.swift in Sources */,
 				323C8388292A394100C15D21 /* LoginViewController.swift in Sources */,
