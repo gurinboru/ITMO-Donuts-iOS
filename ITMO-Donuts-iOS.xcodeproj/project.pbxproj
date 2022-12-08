@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320DEAC929425197007E0987 /* CartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DEAC829425197007E0987 /* CartController.swift */; };
+		320DEACB2942523A007E0987 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DEACA2942523A007E0987 /* Cart.swift */; };
 		323C836E292A2E2700C15D21 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 323C835A292A2E2600C15D21 /* Poppins-MediumItalic.ttf */; };
 		323C836F292A2E2700C15D21 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 323C835B292A2E2600C15D21 /* Poppins-Black.ttf */; };
 		323C8370292A2E2700C15D21 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 323C835C292A2E2600C15D21 /* Poppins-ExtraLight.ttf */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		050A5165D77BB2764180CAE9 /* Pods_ITMO_Donuts_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ITMO_Donuts_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		320DEAC829425197007E0987 /* CartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartController.swift; sourceTree = "<group>"; };
+		320DEACA2942523A007E0987 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		323C835A292A2E2600C15D21 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		323C835B292A2E2600C15D21 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
 		323C835C292A2E2600C15D21 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				D16F7BA12940AD1B0036D981 /* UserData.swift */,
+				320DEAC829425197007E0987 /* CartController.swift */,
+				320DEACA2942523A007E0987 /* Cart.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -333,10 +339,12 @@
 				D1B1A3602911C9730034C053 /* ViewController.swift in Sources */,
 				D12DAF7F292E438700D555BF /* MenuViewController.swift in Sources */,
 				D1D79E75293A2B9B00BDE1E7 /* CartViewController.swift in Sources */,
+				320DEACB2942523A007E0987 /* Cart.swift in Sources */,
 				D12DAF85292E4F8E00D555BF /* TapeViewController.swift in Sources */,
 				D12DAF81292E43E600D555BF /* ContainerViewController.swift in Sources */,
 				D16F7BA22940AD1B0036D981 /* UserData.swift in Sources */,
 				D1B1A35C2911C9730034C053 /* AppDelegate.swift in Sources */,
+				320DEAC929425197007E0987 /* CartController.swift in Sources */,
 				D1B1A35E2911C9730034C053 /* SceneDelegate.swift in Sources */,
 				323C8388292A394100C15D21 /* LoginViewController.swift in Sources */,
 				D12DAF83292E459100D555BF /* ProfileViewController.swift in Sources */,
