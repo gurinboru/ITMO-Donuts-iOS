@@ -18,20 +18,56 @@ class ProfileViewController: UIViewController {
 //    let profileStackView = UIStackView()
 //
 
-    
+    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var fullName: UILabel!
+    @IBOutlet weak var balance: UILabel!
+    @IBOutlet weak var email: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getUserData()
 //        print(UserData.username)
 //        title = UserData.username
-//
-//
-//
 //        configureMainLable()
 //        configureStackView()
     }
     
-//    func configureMainLable() {
+    func getUserData() {
+//        let putParametres: [String: Any] = ["username": UserData.username,, "first_name": firstNameLable.text, "second_name": secondNameLable.text, "phone": phoneLable.text]
+        let putUrl = "https://donut-profile-service.onrender.com/api/v1/profile/user/" + UserData.username
+        let profileURL = URL(string: putUrl)!
+        print(profileURL)
+
+        AF.request(profileURL, method: .get, encoding: JSONEncoding.default).responseJSON { [self]
+            response in
+            switch (response.result) {
+            case .success:
+                //username.text = response["username"]
+                print("------")
+                if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                    print("Data: \(utf8Text)")
+                    let help = utf8Text.split(separator: ",")
+                    username.text = String(help[1].split(separator: ":")[1])
+                    fullName.text = "Full name: " + String(help[3].split(separator: ":")[1] + help[4].split(separator: ":")[1])
+                    balance.text = "Balance: " + String(help[7].split(separator: ":")[1])
+                    email.text = String(help[2].split(separator: ":")[1])
+                }
+            case .failure:
+                let buttonAlert = UIAlertController(title: "Неудача", message: "Ошибка загрузки данных, попробуйте снова!", preferredStyle: UIAlertController.Style.alert)
+                buttonAlert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                self.present(buttonAlert, animated: true, completion: nil)
+                print(Error.self)
+            }
+        }
+    }
+    
+    @IBAction func openEdit(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ProfileEditViewController") as! ProfileEditViewController
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    //    func configureMainLable() {
 //        view.addSubview(mainLable)
 //        mainLable.text = UserData.username
 //        mainLable.textAlignment = .center
@@ -99,7 +135,7 @@ class ProfileViewController: UIViewController {
 //
 //    }
 //
-//    @objc
+    
 //    func btnLoginTouchUpInside() {
 //        let putParametres: [String: Any] = ["username": UserData.username, "email": emailLable.text, "first_name": firstNameLable.text, "second_name": secondNameLable.text, "phone": phoneLable.text]
 //        let putUrl = "https://donut-profile-service.onrender.com/api/v1/profile/user/" + UserData.username
