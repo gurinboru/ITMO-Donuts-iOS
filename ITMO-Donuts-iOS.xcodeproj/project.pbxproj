@@ -29,6 +29,9 @@
 		323C8381292A2E2700C15D21 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 323C836D292A2E2700C15D21 /* Poppins-Thin.ttf */; };
 		323C8385292A38EA00C15D21 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C8384292A38EA00C15D21 /* SignUpViewController.swift */; };
 		323C8388292A394100C15D21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C8387292A394100C15D21 /* LoginViewController.swift */; };
+		32751D4C294F081F000F6FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A3642911C9730034C053 /* Assets.xcassets */; };
+		32751D4F294F0D0D000F6FFA /* DonutCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32751D4D294F0D0D000F6FFA /* DonutCollectionCell.swift */; };
+		32751D50294F0D0D000F6FFA /* DonutCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32751D4E294F0D0D000F6FFA /* DonutCollectionCell.xib */; };
 		D12DAF7F292E438700D555BF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAF7E292E438700D555BF /* MenuViewController.swift */; };
 		D12DAF81292E43E600D555BF /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAF80292E43E600D555BF /* ContainerViewController.swift */; };
 		D12DAF83292E459100D555BF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAF82292E459100D555BF /* ProfileViewController.swift */; };
@@ -38,7 +41,6 @@
 		D1B1A35E2911C9730034C053 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A35D2911C9730034C053 /* SceneDelegate.swift */; };
 		D1B1A3602911C9730034C053 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A35F2911C9730034C053 /* ViewController.swift */; };
 		D1B1A3632911C9730034C053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A3612911C9730034C053 /* Main.storyboard */; };
-		D1B1A3652911C9730034C053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A3642911C9730034C053 /* Assets.xcassets */; };
 		D1B1A3682911C9730034C053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A3662911C9730034C053 /* LaunchScreen.storyboard */; };
 		D1D79E75293A2B9B00BDE1E7 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D79E74293A2B9B00BDE1E7 /* CartViewController.swift */; };
 		D1D79E77293A2C6600BDE1E7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D1D79E76293A2C6600BDE1E7 /* .gitignore */; };
@@ -69,6 +71,8 @@
 		323C836D292A2E2700C15D21 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		323C8384292A38EA00C15D21 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		323C8387292A394100C15D21 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		32751D4D294F0D0D000F6FFA /* DonutCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutCollectionCell.swift; sourceTree = "<group>"; };
+		32751D4E294F0D0D000F6FFA /* DonutCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutCollectionCell.xib; sourceTree = "<group>"; };
 		3FD5983396B8891FD09EDBE2 /* Pods-ITMO-Donuts-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITMO-Donuts-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ITMO-Donuts-iOS/Pods-ITMO-Donuts-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D12DAF7E292E438700D555BF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D12DAF80292E43E600D555BF /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				D12DAF82292E459100D555BF /* ProfileViewController.swift */,
 				D12DAF84292E4F8E00D555BF /* TapeViewController.swift */,
 				D1D79E74293A2B9B00BDE1E7 /* CartViewController.swift */,
+				32751D4D294F0D0D000F6FFA /* DonutCollectionCell.swift */,
+				32751D4E294F0D0D000F6FFA /* DonutCollectionCell.xib */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -264,6 +270,8 @@
 			files = (
 				323C8371292A2E2700C15D21 /* Poppins-Light.ttf in Resources */,
 				323C8378292A2E2700C15D21 /* Poppins-Medium.ttf in Resources */,
+				32751D4C294F081F000F6FFA /* Assets.xcassets in Resources */,
+				32751D50294F0D0D000F6FFA /* DonutCollectionCell.xib in Resources */,
 				323C8370292A2E2700C15D21 /* Poppins-ExtraLight.ttf in Resources */,
 				323C837F292A2E2700C15D21 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				D1D79E77293A2C6600BDE1E7 /* .gitignore in Resources */,
@@ -276,7 +284,6 @@
 				323C8373292A2E2700C15D21 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				323C837D292A2E2700C15D21 /* Poppins-ExtraBold.ttf in Resources */,
 				323C837E292A2E2700C15D21 /* Poppins-BlackItalic.ttf in Resources */,
-				D1B1A3652911C9730034C053 /* Assets.xcassets in Resources */,
 				323C8375292A2E2700C15D21 /* Poppins-Regular.ttf in Resources */,
 				D1B1A3632911C9730034C053 /* Main.storyboard in Resources */,
 				323C836F292A2E2700C15D21 /* Poppins-Black.ttf in Resources */,
@@ -338,6 +345,7 @@
 			files = (
 				D1B1A3602911C9730034C053 /* ViewController.swift in Sources */,
 				D12DAF7F292E438700D555BF /* MenuViewController.swift in Sources */,
+				32751D4F294F0D0D000F6FFA /* DonutCollectionCell.swift in Sources */,
 				D1D79E75293A2B9B00BDE1E7 /* CartViewController.swift in Sources */,
 				320DEACB2942523A007E0987 /* Cart.swift in Sources */,
 				D12DAF85292E4F8E00D555BF /* TapeViewController.swift in Sources */,

@@ -14,6 +14,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var firstPassTextArea: UITextField!
     @IBOutlet weak var secondPassTextArea: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loginTextArea.delegate = self;
@@ -30,11 +31,19 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func actionRegister(_ sender: UIButton) {
+        
         if (firstPassTextArea.text == secondPassTextArea.text) {
             let regURL = URL(string: "https://itmo-donuts-auth.onrender.com/api/v1/auth/registration")!
             let profileURL = URL(string: "https://donut-profile-service.onrender.com/api/v1/profile/user")!
             let parameters: [String: Any] = ["name": loginTextArea.text, "password": firstPassTextArea.text, "confirm_password": secondPassTextArea.text]
             let profileParametres: [String: Any] = ["username": loginTextArea.text, "email": loginTextArea.text]
+            
+            let alertController = UIAlertController(title: "Успешно!", message: nil, preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default) {(action) in
+                
+            }
+            alertController.addAction(action)
+            self.present(alertController, animated: true, completion: nil)
             
             AF.request(regURL, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { [self]
                 response in
@@ -49,14 +58,25 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                         print(response)
                     }
                     
+                    
                     let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     let tapeVC = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
                     self.navigationController?.pushViewController(tapeVC, animated: true)
                     break
                 case .failure:
                     print(Error.self)
+                    
                 }
             }
         }
+        else{
+            let errorAlertController = UIAlertController(title: "Ошибка", message: "Пароли не совпадают", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default) {(action) in
+                
+            }
+            errorAlertController.addAction(action)
+            self.present(errorAlertController, animated: true, completion: nil)
+        }
+        
     }
 }
