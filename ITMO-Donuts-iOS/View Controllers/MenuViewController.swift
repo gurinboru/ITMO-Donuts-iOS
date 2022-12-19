@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 import SideMenu
 
 class MenuViewController: UIViewController, ContainerControllerDelegate {
@@ -87,6 +88,7 @@ class MenuViewController: UIViewController, ContainerControllerDelegate {
             tapeController.view.isHidden = true
             profileController.view.isHidden = false
             cartController.view.isHidden = true
+            profileController.getUserData()
         case .cart:
             tapeController.view.isHidden = true
             profileController.view.isHidden = true
@@ -98,3 +100,4 @@ class MenuViewController: UIViewController, ContainerControllerDelegate {
         }
     }
 }
+

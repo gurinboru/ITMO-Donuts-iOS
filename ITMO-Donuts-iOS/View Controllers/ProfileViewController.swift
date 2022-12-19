@@ -32,8 +32,8 @@ class ProfileViewController: UIViewController {
 //        configureStackView()
     }
     
+    
     func getUserData() {
-//        let putParametres: [String: Any] = ["username": UserData.username,, "first_name": firstNameLable.text, "second_name": secondNameLable.text, "phone": phoneLable.text]
         let putUrl = "https://donut-profile-service.onrender.com/api/v1/profile/user/" + UserData.username
         let profileURL = URL(string: putUrl)!
         print(profileURL)

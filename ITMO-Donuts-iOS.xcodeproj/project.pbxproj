@@ -38,6 +38,9 @@
 		D12DAF85292E4F8E00D555BF /* TapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAF84292E4F8E00D555BF /* TapeViewController.swift */; };
 		D16F7BA22940AD1B0036D981 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16F7BA12940AD1B0036D981 /* UserData.swift */; };
 		D1722EDA294FAFE5003BCA96 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1722ED9294FAFE5003BCA96 /* ProfileEditViewController.swift */; };
+		D1722EDC294FC4FF003BCA96 /* Donut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1722EDB294FC4FF003BCA96 /* Donut.swift */; };
+		D1722EDE294FC510003BCA96 /* Donuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1722EDD294FC510003BCA96 /* Donuts.swift */; };
+		D1722EE0294FD49D003BCA96 /* TapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1722EDF294FD49D003BCA96 /* TapeCollectionViewCell.swift */; };
 		D1B1A35C2911C9730034C053 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A35B2911C9730034C053 /* AppDelegate.swift */; };
 		D1B1A35E2911C9730034C053 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A35D2911C9730034C053 /* SceneDelegate.swift */; };
 		D1B1A3602911C9730034C053 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A35F2911C9730034C053 /* ViewController.swift */; };
@@ -81,6 +84,9 @@
 		D12DAF84292E4F8E00D555BF /* TapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeViewController.swift; sourceTree = "<group>"; };
 		D16F7BA12940AD1B0036D981 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		D1722ED9294FAFE5003BCA96 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		D1722EDB294FC4FF003BCA96 /* Donut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donut.swift; sourceTree = "<group>"; };
+		D1722EDD294FC510003BCA96 /* Donuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donuts.swift; sourceTree = "<group>"; };
+		D1722EDF294FD49D003BCA96 /* TapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D1B1A3582911C9730034C053 /* ITMO-Donuts-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITMO-Donuts-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B1A35B2911C9730034C053 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1B1A35D2911C9730034C053 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +150,7 @@
 				32751D4D294F0D0D000F6FFA /* DonutCollectionCell.swift */,
 				32751D4E294F0D0D000F6FFA /* DonutCollectionCell.xib */,
 				D1722ED9294FAFE5003BCA96 /* ProfileEditViewController.swift */,
+				D1722EDF294FD49D003BCA96 /* TapeCollectionViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -171,6 +178,8 @@
 				D16F7BA12940AD1B0036D981 /* UserData.swift */,
 				320DEAC829425197007E0987 /* CartController.swift */,
 				320DEACA2942523A007E0987 /* Cart.swift */,
+				D1722EDB294FC4FF003BCA96 /* Donut.swift */,
+				D1722EDD294FC510003BCA96 /* Donuts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -346,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1722EDC294FC4FF003BCA96 /* Donut.swift in Sources */,
 				D1B1A3602911C9730034C053 /* ViewController.swift in Sources */,
 				D1722EDA294FAFE5003BCA96 /* ProfileEditViewController.swift in Sources */,
 				D12DAF7F292E438700D555BF /* MenuViewController.swift in Sources */,
@@ -359,7 +369,9 @@
 				320DEAC929425197007E0987 /* CartController.swift in Sources */,
 				D1B1A35E2911C9730034C053 /* SceneDelegate.swift in Sources */,
 				323C8388292A394100C15D21 /* LoginViewController.swift in Sources */,
+				D1722EDE294FC510003BCA96 /* Donuts.swift in Sources */,
 				D12DAF83292E459100D555BF /* ProfileViewController.swift in Sources */,
+				D1722EE0294FD49D003BCA96 /* TapeCollectionViewCell.swift in Sources */,
 				323C8385292A38EA00C15D21 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
