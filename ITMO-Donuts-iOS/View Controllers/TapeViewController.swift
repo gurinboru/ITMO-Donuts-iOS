@@ -46,5 +46,10 @@ class TapeViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Select donut: \(dataSource[indexPath.row].title)")
+        UserData.selectedDonut = indexPath.row
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "DetailDonutViewController") as! DetailDonutViewController
+        self.present(nextViewController, animated:true, completion:nil)
+        
     }
 }

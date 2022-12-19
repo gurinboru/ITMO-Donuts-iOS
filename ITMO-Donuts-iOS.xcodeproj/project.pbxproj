@@ -32,6 +32,26 @@
 		32751D4C294F081F000F6FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A3642911C9730034C053 /* Assets.xcassets */; };
 		32751D4F294F0D0D000F6FFA /* DonutCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32751D4D294F0D0D000F6FFA /* DonutCollectionCell.swift */; };
 		32751D50294F0D0D000F6FFA /* DonutCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32751D4E294F0D0D000F6FFA /* DonutCollectionCell.xib */; };
+		D12203392950032B00733AD5 /* product_9.obj in Resources */ = {isa = PBXBuildFile; fileRef = D12203252950032A00733AD5 /* product_9.obj */; };
+		D122033A2950032B00733AD5 /* product_9.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D12203262950032A00733AD5 /* product_9.mtl */; };
+		D122033B2950032B00733AD5 /* product_3.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D12203272950032A00733AD5 /* product_3.mtl */; };
+		D122033C2950032B00733AD5 /* product_7.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D12203282950032A00733AD5 /* product_7.mtl */; };
+		D122033D2950032B00733AD5 /* product_10.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D12203292950032A00733AD5 /* product_10.mtl */; };
+		D122033E2950032B00733AD5 /* product_4.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D122032A2950032A00733AD5 /* product_4.mtl */; };
+		D122033F2950032B00733AD5 /* product_6.obj in Resources */ = {isa = PBXBuildFile; fileRef = D122032B2950032A00733AD5 /* product_6.obj */; };
+		D12203402950032B00733AD5 /* product_5.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D122032C2950032A00733AD5 /* product_5.mtl */; };
+		D12203412950032B00733AD5 /* product_4.obj in Resources */ = {isa = PBXBuildFile; fileRef = D122032D2950032A00733AD5 /* product_4.obj */; };
+		D12203422950032B00733AD5 /* product_5.obj in Resources */ = {isa = PBXBuildFile; fileRef = D122032E2950032A00733AD5 /* product_5.obj */; };
+		D12203432950032B00733AD5 /* product_8.obj in Resources */ = {isa = PBXBuildFile; fileRef = D122032F2950032A00733AD5 /* product_8.obj */; };
+		D12203442950032B00733AD5 /* product_10.obj in Resources */ = {isa = PBXBuildFile; fileRef = D12203302950032A00733AD5 /* product_10.obj */; };
+		D12203452950032B00733AD5 /* product_1.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D12203312950032A00733AD5 /* product_1.mtl */; };
+		D12203462950032B00733AD5 /* product_1.obj in Resources */ = {isa = PBXBuildFile; fileRef = D12203322950032A00733AD5 /* product_1.obj */; };
+		D12203472950032B00733AD5 /* product_2.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D12203332950032A00733AD5 /* product_2.mtl */; };
+		D12203482950032B00733AD5 /* product_2.obj in Resources */ = {isa = PBXBuildFile; fileRef = D12203342950032B00733AD5 /* product_2.obj */; };
+		D12203492950032B00733AD5 /* product_7.obj in Resources */ = {isa = PBXBuildFile; fileRef = D12203352950032B00733AD5 /* product_7.obj */; };
+		D122034A2950032B00733AD5 /* product_8.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D12203362950032B00733AD5 /* product_8.mtl */; };
+		D122034B2950032B00733AD5 /* product_6.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D12203372950032B00733AD5 /* product_6.mtl */; };
+		D122034C2950032B00733AD5 /* product_3.obj in Resources */ = {isa = PBXBuildFile; fileRef = D12203382950032B00733AD5 /* product_3.obj */; };
 		D12DAF7F292E438700D555BF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAF7E292E438700D555BF /* MenuViewController.swift */; };
 		D12DAF81292E43E600D555BF /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAF80292E43E600D555BF /* ContainerViewController.swift */; };
 		D12DAF83292E459100D555BF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAF82292E459100D555BF /* ProfileViewController.swift */; };
@@ -41,6 +61,7 @@
 		D1722EDC294FC4FF003BCA96 /* Donut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1722EDB294FC4FF003BCA96 /* Donut.swift */; };
 		D1722EDE294FC510003BCA96 /* Donuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1722EDD294FC510003BCA96 /* Donuts.swift */; };
 		D1722EE0294FD49D003BCA96 /* TapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1722EDF294FD49D003BCA96 /* TapeCollectionViewCell.swift */; };
+		D1722EE2294FEA97003BCA96 /* DetailDonutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1722EE1294FEA97003BCA96 /* DetailDonutViewController.swift */; };
 		D1B1A35C2911C9730034C053 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A35B2911C9730034C053 /* AppDelegate.swift */; };
 		D1B1A35E2911C9730034C053 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A35D2911C9730034C053 /* SceneDelegate.swift */; };
 		D1B1A3602911C9730034C053 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1A35F2911C9730034C053 /* ViewController.swift */; };
@@ -78,6 +99,26 @@
 		32751D4D294F0D0D000F6FFA /* DonutCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutCollectionCell.swift; sourceTree = "<group>"; };
 		32751D4E294F0D0D000F6FFA /* DonutCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutCollectionCell.xib; sourceTree = "<group>"; };
 		3FD5983396B8891FD09EDBE2 /* Pods-ITMO-Donuts-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITMO-Donuts-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ITMO-Donuts-iOS/Pods-ITMO-Donuts-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D12203252950032A00733AD5 /* product_9.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_9.obj; sourceTree = "<group>"; };
+		D12203262950032A00733AD5 /* product_9.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_9.mtl; sourceTree = "<group>"; };
+		D12203272950032A00733AD5 /* product_3.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_3.mtl; sourceTree = "<group>"; };
+		D12203282950032A00733AD5 /* product_7.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_7.mtl; sourceTree = "<group>"; };
+		D12203292950032A00733AD5 /* product_10.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_10.mtl; sourceTree = "<group>"; };
+		D122032A2950032A00733AD5 /* product_4.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_4.mtl; sourceTree = "<group>"; };
+		D122032B2950032A00733AD5 /* product_6.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_6.obj; sourceTree = "<group>"; };
+		D122032C2950032A00733AD5 /* product_5.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_5.mtl; sourceTree = "<group>"; };
+		D122032D2950032A00733AD5 /* product_4.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_4.obj; sourceTree = "<group>"; };
+		D122032E2950032A00733AD5 /* product_5.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_5.obj; sourceTree = "<group>"; };
+		D122032F2950032A00733AD5 /* product_8.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_8.obj; sourceTree = "<group>"; };
+		D12203302950032A00733AD5 /* product_10.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_10.obj; sourceTree = "<group>"; };
+		D12203312950032A00733AD5 /* product_1.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_1.mtl; sourceTree = "<group>"; };
+		D12203322950032A00733AD5 /* product_1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_1.obj; sourceTree = "<group>"; };
+		D12203332950032A00733AD5 /* product_2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_2.mtl; sourceTree = "<group>"; };
+		D12203342950032B00733AD5 /* product_2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_2.obj; sourceTree = "<group>"; };
+		D12203352950032B00733AD5 /* product_7.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_7.obj; sourceTree = "<group>"; };
+		D12203362950032B00733AD5 /* product_8.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_8.mtl; sourceTree = "<group>"; };
+		D12203372950032B00733AD5 /* product_6.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_6.mtl; sourceTree = "<group>"; };
+		D12203382950032B00733AD5 /* product_3.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_3.obj; sourceTree = "<group>"; };
 		D12DAF7E292E438700D555BF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D12DAF80292E43E600D555BF /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		D12DAF82292E459100D555BF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +128,7 @@
 		D1722EDB294FC4FF003BCA96 /* Donut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donut.swift; sourceTree = "<group>"; };
 		D1722EDD294FC510003BCA96 /* Donuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donuts.swift; sourceTree = "<group>"; };
 		D1722EDF294FD49D003BCA96 /* TapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeCollectionViewCell.swift; sourceTree = "<group>"; };
+		D1722EE1294FEA97003BCA96 /* DetailDonutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDonutViewController.swift; sourceTree = "<group>"; };
 		D1B1A3582911C9730034C053 /* ITMO-Donuts-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITMO-Donuts-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B1A35B2911C9730034C053 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1B1A35D2911C9730034C053 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +193,7 @@
 				32751D4E294F0D0D000F6FFA /* DonutCollectionCell.xib */,
 				D1722ED9294FAFE5003BCA96 /* ProfileEditViewController.swift */,
 				D1722EDF294FD49D003BCA96 /* TapeCollectionViewCell.swift */,
+				D1722EE1294FEA97003BCA96 /* DetailDonutViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -172,6 +215,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D12203242950030F00733AD5 /* product_models */ = {
+			isa = PBXGroup;
+			children = (
+				D12203312950032A00733AD5 /* product_1.mtl */,
+				D12203322950032A00733AD5 /* product_1.obj */,
+				D12203332950032A00733AD5 /* product_2.mtl */,
+				D12203342950032B00733AD5 /* product_2.obj */,
+				D12203272950032A00733AD5 /* product_3.mtl */,
+				D12203382950032B00733AD5 /* product_3.obj */,
+				D122032A2950032A00733AD5 /* product_4.mtl */,
+				D122032D2950032A00733AD5 /* product_4.obj */,
+				D122032C2950032A00733AD5 /* product_5.mtl */,
+				D122032E2950032A00733AD5 /* product_5.obj */,
+				D12203372950032B00733AD5 /* product_6.mtl */,
+				D122032B2950032A00733AD5 /* product_6.obj */,
+				D12203282950032A00733AD5 /* product_7.mtl */,
+				D12203352950032B00733AD5 /* product_7.obj */,
+				D12203362950032B00733AD5 /* product_8.mtl */,
+				D122032F2950032A00733AD5 /* product_8.obj */,
+				D12203262950032A00733AD5 /* product_9.mtl */,
+				D12203252950032A00733AD5 /* product_9.obj */,
+				D12203292950032A00733AD5 /* product_10.mtl */,
+				D12203302950032A00733AD5 /* product_10.obj */,
+			);
+			path = product_models;
+			sourceTree = "<group>";
+		};
 		D16F7BA02940AD090036D981 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +257,7 @@
 		D1B1A34F2911C9720034C053 = {
 			isa = PBXGroup;
 			children = (
+				D12203242950030F00733AD5 /* product_models */,
 				D1D79E76293A2C6600BDE1E7 /* .gitignore */,
 				323C8359292A2DE600C15D21 /* Fonts */,
 				D1B1A35A2911C9730034C053 /* ITMO-Donuts-iOS */,
@@ -280,24 +351,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D122033A2950032B00733AD5 /* product_9.mtl in Resources */,
 				323C8371292A2E2700C15D21 /* Poppins-Light.ttf in Resources */,
+				D12203472950032B00733AD5 /* product_2.mtl in Resources */,
 				323C8378292A2E2700C15D21 /* Poppins-Medium.ttf in Resources */,
+				D12203402950032B00733AD5 /* product_5.mtl in Resources */,
 				32751D4C294F081F000F6FFA /* Assets.xcassets in Resources */,
+				D12203482950032B00733AD5 /* product_2.obj in Resources */,
+				D122034C2950032B00733AD5 /* product_3.obj in Resources */,
 				32751D50294F0D0D000F6FFA /* DonutCollectionCell.xib in Resources */,
 				323C8370292A2E2700C15D21 /* Poppins-ExtraLight.ttf in Resources */,
+				D122033F2950032B00733AD5 /* product_6.obj in Resources */,
 				323C837F292A2E2700C15D21 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				D12203452950032B00733AD5 /* product_1.mtl in Resources */,
 				D1D79E77293A2C6600BDE1E7 /* .gitignore in Resources */,
+				D12203412950032B00733AD5 /* product_4.obj in Resources */,
 				323C8379292A2E2700C15D21 /* Poppins-Italic.ttf in Resources */,
+				D12203462950032B00733AD5 /* product_1.obj in Resources */,
+				D122033C2950032B00733AD5 /* product_7.mtl in Resources */,
+				D122033D2950032B00733AD5 /* product_10.mtl in Resources */,
 				323C8374292A2E2700C15D21 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				D12203422950032B00733AD5 /* product_5.obj in Resources */,
+				D12203432950032B00733AD5 /* product_8.obj in Resources */,
+				D12203442950032B00733AD5 /* product_10.obj in Resources */,
 				323C8376292A2E2700C15D21 /* Poppins-BoldItalic.ttf in Resources */,
 				D1B1A3682911C9730034C053 /* LaunchScreen.storyboard in Resources */,
 				323C8372292A2E2700C15D21 /* Poppins-Bold.ttf in Resources */,
+				D122033B2950032B00733AD5 /* product_3.mtl in Resources */,
 				323C836E292A2E2700C15D21 /* Poppins-MediumItalic.ttf in Resources */,
 				323C8373292A2E2700C15D21 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				323C837D292A2E2700C15D21 /* Poppins-ExtraBold.ttf in Resources */,
+				D12203492950032B00733AD5 /* product_7.obj in Resources */,
+				D12203392950032B00733AD5 /* product_9.obj in Resources */,
 				323C837E292A2E2700C15D21 /* Poppins-BlackItalic.ttf in Resources */,
 				323C8375292A2E2700C15D21 /* Poppins-Regular.ttf in Resources */,
+				D122034A2950032B00733AD5 /* product_8.mtl in Resources */,
 				D1B1A3632911C9730034C053 /* Main.storyboard in Resources */,
+				D122033E2950032B00733AD5 /* product_4.mtl in Resources */,
+				D122034B2950032B00733AD5 /* product_6.mtl in Resources */,
 				323C836F292A2E2700C15D21 /* Poppins-Black.ttf in Resources */,
 				323C837C292A2E2700C15D21 /* Poppins-ThinItalic.ttf in Resources */,
 				323C8381292A2E2700C15D21 /* Poppins-Thin.ttf in Resources */,
@@ -362,6 +453,7 @@
 				32751D4F294F0D0D000F6FFA /* DonutCollectionCell.swift in Sources */,
 				D1D79E75293A2B9B00BDE1E7 /* CartViewController.swift in Sources */,
 				320DEACB2942523A007E0987 /* Cart.swift in Sources */,
+				D1722EE2294FEA97003BCA96 /* DetailDonutViewController.swift in Sources */,
 				D12DAF85292E4F8E00D555BF /* TapeViewController.swift in Sources */,
 				D12DAF81292E43E600D555BF /* ContainerViewController.swift in Sources */,
 				D16F7BA22940AD1B0036D981 /* UserData.swift in Sources */,

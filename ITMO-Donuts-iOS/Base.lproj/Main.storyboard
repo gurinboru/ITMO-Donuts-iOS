@@ -469,20 +469,83 @@
             </objects>
             <point key="canvasLocation" x="6247.6923076923076" y="6.3981042654028437"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Donut View Controller-->
         <scene sceneID="7bp-hV-0qs">
             <objects>
-                <viewController id="U08-oh-MHR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailDonutViewController" id="U08-oh-MHR" customClass="DetailDonutViewController" customModule="ITMO_Donuts_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sEp-Pg-Apf">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n9O-ws-Q0O">
+                                <rect key="frame" x="47" y="124" width="297" height="328"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </sceneKitView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bci-Tm-ntL">
+                                <rect key="frame" x="47" y="471" width="282" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 3" translatesAutoresizingMaskIntoConstraints="NO" id="b6X-QJ-Iec">
+                                <rect key="frame" x="-13" y="0.0" width="403" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyu-Es-epk">
+                                <rect key="frame" x="47" y="546" width="282" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7d-yf-sBL">
+                                <rect key="frame" x="47" y="619" width="282" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGt-6i-9Se">
+                                <rect key="frame" x="113" y="688" width="150" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add to cart">
+                                    <fontDescription key="titleFontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
+                                    <color key="baseForegroundColor" red="0.043137254899999998" green="0.18823529410000001" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.99607843139999996" green="0.81568627449999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addToCart:" destination="U08-oh-MHR" eventType="touchUpInside" id="8yi-LZ-BCz"/>
+                                    <action selector="openEdit:" destination="Z3V-08-KXE" eventType="touchUpInside" id="2Gz-yW-9Jg"/>
+                                    <action selector="saveProfileData:" destination="fkw-Yl-ocL" eventType="touchUpInside" id="8LE-ub-8gl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqF-TD-rOh">
+                                <rect key="frame" x="99" y="62" width="193" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="oNC-Nc-gi3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="desc" destination="Lyu-Es-epk" id="Wrl-ZX-D8w"/>
+                        <outlet property="donutModel" destination="n9O-ws-Q0O" id="cog-7K-rpZ"/>
+                        <outlet property="energetic" destination="Y7d-yf-sBL" id="RNQ-BQ-hnk"/>
+                        <outlet property="name" destination="gqF-TD-rOh" id="3xt-bo-k7C"/>
+                        <outlet property="price" destination="bci-Tm-ntL" id="dFp-Gn-sZE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddk-WQ-qZT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7068" y="6"/>
+            <point key="canvasLocation" x="7067.6923076923076" y="5.6872037914691944"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gXe-S3-2QP">
@@ -592,6 +655,9 @@
         <image name="full name" width="349" height="33"/>
         <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
         <image name="profile-widget 1" width="349" height="95"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

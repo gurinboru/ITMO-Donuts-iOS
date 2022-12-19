@@ -14,4 +14,6 @@ struct UserData {
     static var phone = ""
     static var email = ""
     static var balance = 10000
+    static var selectedDonut = 0
+    static var cartDonuts: [Int] = []
 }
