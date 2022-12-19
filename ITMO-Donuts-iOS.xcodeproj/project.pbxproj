@@ -30,8 +30,6 @@
 		323C8385292A38EA00C15D21 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C8384292A38EA00C15D21 /* SignUpViewController.swift */; };
 		323C8388292A394100C15D21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C8387292A394100C15D21 /* LoginViewController.swift */; };
 		32751D4C294F081F000F6FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B1A3642911C9730034C053 /* Assets.xcassets */; };
-		32751D4F294F0D0D000F6FFA /* DonutCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32751D4D294F0D0D000F6FFA /* DonutCollectionCell.swift */; };
-		32751D50294F0D0D000F6FFA /* DonutCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32751D4E294F0D0D000F6FFA /* DonutCollectionCell.xib */; };
 		D12203392950032B00733AD5 /* product_9.obj in Resources */ = {isa = PBXBuildFile; fileRef = D12203252950032A00733AD5 /* product_9.obj */; };
 		D122033A2950032B00733AD5 /* product_9.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D12203262950032A00733AD5 /* product_9.mtl */; };
 		D122033B2950032B00733AD5 /* product_3.mtl in Resources */ = {isa = PBXBuildFile; fileRef = D12203272950032A00733AD5 /* product_3.mtl */; };
@@ -96,8 +94,6 @@
 		323C836D292A2E2700C15D21 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		323C8384292A38EA00C15D21 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		323C8387292A394100C15D21 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		32751D4D294F0D0D000F6FFA /* DonutCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutCollectionCell.swift; sourceTree = "<group>"; };
-		32751D4E294F0D0D000F6FFA /* DonutCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutCollectionCell.xib; sourceTree = "<group>"; };
 		3FD5983396B8891FD09EDBE2 /* Pods-ITMO-Donuts-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITMO-Donuts-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ITMO-Donuts-iOS/Pods-ITMO-Donuts-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D12203252950032A00733AD5 /* product_9.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_9.obj; sourceTree = "<group>"; };
 		D12203262950032A00733AD5 /* product_9.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product_9.mtl; sourceTree = "<group>"; };
@@ -189,8 +185,6 @@
 				D12DAF82292E459100D555BF /* ProfileViewController.swift */,
 				D12DAF84292E4F8E00D555BF /* TapeViewController.swift */,
 				D1D79E74293A2B9B00BDE1E7 /* CartViewController.swift */,
-				32751D4D294F0D0D000F6FFA /* DonutCollectionCell.swift */,
-				32751D4E294F0D0D000F6FFA /* DonutCollectionCell.xib */,
 				D1722ED9294FAFE5003BCA96 /* ProfileEditViewController.swift */,
 				D1722EDF294FD49D003BCA96 /* TapeCollectionViewCell.swift */,
 				D1722EE1294FEA97003BCA96 /* DetailDonutViewController.swift */,
@@ -359,7 +353,6 @@
 				32751D4C294F081F000F6FFA /* Assets.xcassets in Resources */,
 				D12203482950032B00733AD5 /* product_2.obj in Resources */,
 				D122034C2950032B00733AD5 /* product_3.obj in Resources */,
-				32751D50294F0D0D000F6FFA /* DonutCollectionCell.xib in Resources */,
 				323C8370292A2E2700C15D21 /* Poppins-ExtraLight.ttf in Resources */,
 				D122033F2950032B00733AD5 /* product_6.obj in Resources */,
 				323C837F292A2E2700C15D21 /* Poppins-ExtraBoldItalic.ttf in Resources */,
@@ -450,7 +443,6 @@
 				D1B1A3602911C9730034C053 /* ViewController.swift in Sources */,
 				D1722EDA294FAFE5003BCA96 /* ProfileEditViewController.swift in Sources */,
 				D12DAF7F292E438700D555BF /* MenuViewController.swift in Sources */,
-				32751D4F294F0D0D000F6FFA /* DonutCollectionCell.swift in Sources */,
 				D1D79E75293A2B9B00BDE1E7 /* CartViewController.swift in Sources */,
 				320DEACB2942523A007E0987 /* Cart.swift in Sources */,
 				D1722EE2294FEA97003BCA96 /* DetailDonutViewController.swift in Sources */,

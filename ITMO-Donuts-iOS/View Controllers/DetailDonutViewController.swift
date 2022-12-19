@@ -67,6 +67,9 @@ class DetailDonutViewController: UIViewController {
 
     @IBAction func addToCart(_ sender: Any) {
         UserData.cartDonuts.append(UserData.selectedDonut)
+        let buttonAlert = UIAlertController(title: "Успех!", message: "Товар добавлен в корзину!", preferredStyle: UIAlertController.Style.alert)
+        buttonAlert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(buttonAlert, animated: true, completion: nil)
     }
     
 }

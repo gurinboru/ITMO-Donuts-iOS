@@ -93,6 +93,7 @@ class MenuViewController: UIViewController, ContainerControllerDelegate {
             tapeController.view.isHidden = true
             profileController.view.isHidden = true
             cartController.view.isHidden = false
+            cartController.getData()
         case .about:
             tapeController.view.isHidden = true
             profileController.view.isHidden = true
