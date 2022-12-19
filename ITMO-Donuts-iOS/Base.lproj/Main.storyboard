@@ -165,8 +165,35 @@
                     <view key="view" contentMode="scaleToFill" id="RoY-ws-YLJ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOE-ji-RrQ">
+                                <rect key="frame" x="132" y="121" width="126" height="32.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Данное приложение создано  студентами университета ИТМО и моделирует ситуацию создания бренда пончиков на базе университета!" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5b-4E-sZq">
+                                <rect key="frame" x="30" y="252" width="331" height="198"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Rectangle 3" translatesAutoresizingMaskIntoConstraints="NO" id="3eN-wV-jAF">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="103"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="oG6-vH-Uhh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f5b-4E-sZq" firstAttribute="leading" secondItem="oG6-vH-Uhh" secondAttribute="leading" constant="30" id="FDw-Pu-hxR"/>
+                            <constraint firstItem="oG6-vH-Uhh" firstAttribute="trailing" secondItem="AOE-ji-RrQ" secondAttribute="trailing" constant="132" id="Hq2-m7-at5"/>
+                            <constraint firstItem="AOE-ji-RrQ" firstAttribute="top" secondItem="3eN-wV-jAF" secondAttribute="bottom" id="KGO-aK-Y3J"/>
+                            <constraint firstItem="oG6-vH-Uhh" firstAttribute="trailing" secondItem="f5b-4E-sZq" secondAttribute="trailing" constant="29" id="N6T-9X-nlq"/>
+                            <constraint firstItem="f5b-4E-sZq" firstAttribute="top" secondItem="AOE-ji-RrQ" secondAttribute="bottom" constant="98.670000000000002" id="bB0-AC-LIe"/>
+                            <constraint firstItem="oG6-vH-Uhh" firstAttribute="bottom" secondItem="f5b-4E-sZq" secondAttribute="bottom" constant="311" id="eiw-6L-eay"/>
+                            <constraint firstItem="f5b-4E-sZq" firstAttribute="top" secondItem="AOE-ji-RrQ" secondAttribute="bottom" constant="98.670000000000002" id="mX9-lp-vOk"/>
+                            <constraint firstItem="AOE-ji-RrQ" firstAttribute="leading" secondItem="oG6-vH-Uhh" secondAttribute="leading" constant="132" id="mYG-VO-M62"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="Oqv-mZ-J3K">
@@ -180,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Nd-Wu-Lvn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2760" y="-2"/>
+            <point key="canvasLocation" x="2760" y="-2.1327014218009479"/>
         </scene>
         <!--Tape View Controller-->
         <scene sceneID="AVA-gD-Li2">
